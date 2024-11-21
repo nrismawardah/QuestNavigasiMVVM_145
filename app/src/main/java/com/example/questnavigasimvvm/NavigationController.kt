@@ -14,6 +14,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.questnavigasimvvm.model.JenisKelamin.listJK
 import com.example.questnavigasimvvm.ui.view.FormView
+import com.example.questnavigasimvvm.ui.view.TampilDataView
 import com.example.questnavigasimvvm.viewmodel.SiswaViewModel
 
 
@@ -52,7 +53,11 @@ fun NavigationControl(
         composable(
             route = Halaman.TAMPILDATA.name
         ){
-
+            TampilDataView(
+                uiState = uiState,
+                onBackButton = {
+                navHost.popBackStack() }
+            )
         }
     }
 }
