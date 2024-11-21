@@ -1,11 +1,13 @@
 package com.example.questnavigasimvvm.ui.view
 
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
@@ -117,5 +119,19 @@ fun FormView(
             modifier = Modifier.
             padding(5.dp)
         )
+        Column {
+            Text(text = "Gender:")
+            Row(modifier = Modifier.fillMaxWidth()){
+                listJK.forEach{selectedGender->
+                    Row (verticalAlignment = Alignment.CenterVertically){
+                        RadioButton(
+                            selected = gender == selectedGender,
+                            onClick = {gender = selectedGender}
+                        )
+                        Text(text = selectedGender)
+                    }
+                }
+            }
+        }
     }
 }
