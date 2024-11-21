@@ -7,6 +7,7 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.questnavigasimvvm.viewmodel.SiswaViewModel
 
@@ -26,6 +27,10 @@ fun NavigationController(
         navController = navHost,
         startDestination = Halaman.FORMULIR.name
     ){
+        composable(
+            route = Halaman.FORMULIR.name
+        ){
 
+        }
     }
 }
