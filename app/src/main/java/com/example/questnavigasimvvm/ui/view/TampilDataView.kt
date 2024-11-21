@@ -36,5 +36,10 @@ fun TampilDataView(
 fun TampilData(
     param:String, argu:String
 ){
+    Column (
+        modifier = Modifier
+            .padding(16.dp)
+    ){
 
+    }
 }
