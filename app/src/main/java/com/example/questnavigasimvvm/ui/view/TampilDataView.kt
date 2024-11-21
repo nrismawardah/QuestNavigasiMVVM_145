@@ -29,6 +29,12 @@ fun TampilDataView(
             fontSize = 20.sp,
             fontWeight = FontWeight.Bold
         )
-
     }
+}
+
+@Composable
+fun TampilData(
+    param:String, argu:String
+){
+
 }
