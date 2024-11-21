@@ -1,6 +1,7 @@
 package com.example.questnavigasimvvm.ui.view
 
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -111,6 +112,10 @@ fun FormView(
                 keyboardType = KeyboardType.Number
             ),
             modifier = Modifier.fillMaxWidth().padding(5.dp)
+        )
+        Spacer(
+            modifier = Modifier.
+            padding(5.dp)
         )
     }
 }
