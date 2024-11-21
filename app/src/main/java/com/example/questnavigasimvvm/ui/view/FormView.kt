@@ -19,4 +19,6 @@ fun FormView(
     var alamat by remember { mutableStateOf("") }
     var notelp by remember { mutableStateOf("") }
     var gender by remember { mutableStateOf("") }
+
+    val listData: MutableList<String> = mutableListOf(nim, nama, email, alamat, notelp, gender)
 }
