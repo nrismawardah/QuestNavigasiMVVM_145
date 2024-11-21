@@ -49,5 +49,10 @@ fun NavigationControl(
                 }
             )
         }
+        composable(
+            route = Halaman.TAMPILDATA.name
+        ){
+
+        }
     }
 }
