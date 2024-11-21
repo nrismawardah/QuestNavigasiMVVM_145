@@ -32,6 +32,30 @@ fun TampilDataView(
             fontSize = 20.sp,
             fontWeight = FontWeight.Bold
         )
+        TampilData(
+            param = "NIM",
+            argu = uiState.nim
+        )
+        TampilData(
+            param = "Nama",
+            argu = uiState.nama
+        )
+        TampilData(
+            param = "Email",
+            argu = uiState.email
+        )
+        TampilData(
+            param = "Alamat",
+            argu = uiState.alamat
+        )
+        TampilData(
+            param = "No Telepon",
+            argu = uiState.notelp
+        )
+        TampilData(
+            param = "Gender",
+            argu = uiState.gender
+        )
     }
 }
 
